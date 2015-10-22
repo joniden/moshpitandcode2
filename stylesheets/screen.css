@@ -1,0 +1,528 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic);
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 19, ../sass/screen.scss */
+* {
+  box-sizing: box-model;
+}
+
+/* line 23, ../sass/screen.scss */
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 33, ../sass/screen.scss */
+p {
+  font-family: "Didact Gothic", sans-serif;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* line 40, ../sass/screen.scss */
+h1, h2, h3, h4 {
+  font-family: "Francois One", Helvetica, Arial, sans-serif;
+}
+
+/* line 44, ../sass/screen.scss */
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* line 49, ../sass/screen.scss */
+h2 {
+  font-size: 40px;
+}
+
+/* line 53, ../sass/screen.scss */
+h3 {
+  font-size: 32px;
+}
+
+/* line 57, ../sass/screen.scss */
+header {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* line 67, ../sass/screen.scss */
+header img.bkr {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 77, ../sass/screen.scss */
+.logo {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+}
+/* line 82, ../sass/screen.scss */
+.logo:hover {
+  animation: shake 1s ease infinite;
+}
+
+/* line 87, ../sass/screen.scss */
+.profile-pic {
+  width: 30%;
+  min-width: 250px;
+  max-width: 320px;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  border: 10px solid transparent;
+  transition-property: border-left, border-top, border-right, border-bottom;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.1s, 0.12s, 0.15s,0.2s;
+}
+@media (max-width: 912px) {
+  /* line 87, ../sass/screen.scss */
+  .profile-pic {
+    float: none;
+    margin-bottom: 50px;
+    display: block;
+  }
+}
+/* line 107, ../sass/screen.scss */
+.profile-pic:hover {
+  border: 10px solid green;
+}
+/* line 111, ../sass/screen.scss */
+.profile-pic img {
+  width: 100%;
+}
+
+/* line 116, ../sass/screen.scss */
+.top-content {
+  margin: auto;
+  max-width: 1200px;
+  width: 90%;
+  overflow: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 125, ../sass/screen.scss */
+.top-content-body {
+  display: inline-block;
+  color: white;
+  max-width: 530px;
+  margin-left: 40px;
+  text-align: left;
+}
+@media (max-width: 912px) {
+  /* line 125, ../sass/screen.scss */
+  .top-content-body {
+    margin: 0 auto;
+    display: block;
+  }
+  /* line 135, ../sass/screen.scss */
+  .top-content-body h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+/* line 142, ../sass/screen.scss */
+.content {
+  background: black;
+  min-height: 100vh;
+}
+
+/* line 147, ../sass/screen.scss */
+.columns {
+  -webkit-columns: 320px 3;
+  -moz-columns: 320px 3;
+  columns: 320px 3;
+}
+@media (max-width: 1000px) {
+  /* line 147, ../sass/screen.scss */
+  .columns {
+    -webkit-columns: 320px 2;
+    -moz-columns: 320px 2;
+    columns: 320px 2;
+  }
+}
+
+/* line 159, ../sass/screen.scss */
+.inner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  color: white;
+}
+/* line 165, ../sass/screen.scss */
+.inner-content blockquote {
+  font-size: 30px;
+  background: #111;
+  font-style: italic;
+  font-family: Garamond;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+}
+/* line 175, ../sass/screen.scss */
+.inner-content blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+/* line 185, ../sass/screen.scss */
+.inner-content h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+/* line 192, ../sass/screen.scss */
+.inner-content .column {
+  display: inline-block;
+  margin: 30px 5%;
+  -webkit-column-break-inside: avoid;
+  /* Chrome, Safari, Opera */
+  page-break-inside: avoid;
+  /* Firefox */
+  break-inside: avoid;
+  /* IE 10+ */
+}
+/* line 199, ../sass/screen.scss */
+.inner-content .column h3 {
+  margin-bottom: 20px;
+}
+/* line 203, ../sass/screen.scss */
+.inner-content .column b {
+  color: #7FFF00;
+}
+
+/* line 209, ../sass/screen.scss */
+.contact {
+  text-align: center;
+  padding-bottom: 100px;
+  background: white;
+}
+/* line 214, ../sass/screen.scss */
+.contact h2 {
+  padding-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 221, ../sass/screen.scss */
+.contact ul {
+  width: 100%;
+  text-align: center;
+}
+/* line 226, ../sass/screen.scss */
+.contact li {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 50%;
+}
+/* line 234, ../sass/screen.scss */
+.contact li a {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+  border-radius: 50%;
+  background: #eee;
+  border: 6px solid white;
+  transition: all 0.1s ease-in;
+  text-transform: uppercase;
+}
+/* line 246, ../sass/screen.scss */
+.contact li a:after {
+  background: green;
+  bottom: 88px;
+  color: #fff;
+  content: attr(title);
+  display: block;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  position: absolute;
+  z-index: 98;
+  color: white;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+/* line 269, ../sass/screen.scss */
+.contact li a:before {
+  border: solid;
+  border-color: green transparent;
+  border-width: 6px 6px 0 6px;
+  bottom: 82px;
+  content: "";
+  left: 31px;
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+/* line 283, ../sass/screen.scss */
+.contact li a:hover {
+  background: #fff;
+  border: 6px solid green;
+}
+/* line 287, ../sass/screen.scss */
+.contact li a:hover:before, .contact li a:hover:after {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+/* line 293, ../sass/screen.scss */
+.contact li a img {
+  width: 100%;
+}
+
+@keyframes shake {
+  2% {
+    transform: translate(2.5px, -0.5px) rotate(1.5deg);
+  }
+  4% {
+    transform: translate(0.5px, 1.5px) rotate(-0.5deg);
+  }
+  6% {
+    transform: translate(-1.5px, -1.5px) rotate(0.5deg);
+  }
+  8% {
+    transform: translate(1.5px, 1.5px) rotate(-0.5deg);
+  }
+  10% {
+    transform: translate(0.5px, -1.5px) rotate(0.5deg);
+  }
+  12% {
+    transform: translate(1.5px, 0.5px) rotate(-0.5deg);
+  }
+  14% {
+    transform: translate(-1.5px, 1.5px) rotate(-0.5deg);
+  }
+  16% {
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+  18% {
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+  20% {
+    transform: translate(2.5px, 1.5px) rotate(0.5deg);
+  }
+  22% {
+    transform: translate(-1.5px, -1.5px) rotate(-0.5deg);
+  }
+  24% {
+    transform: translate(-1.5px, 0.5px) rotate(-0.5deg);
+  }
+  26% {
+    transform: translate(-1.5px, 2.5px) rotate(-0.5deg);
+  }
+  28% {
+    transform: translate(2.5px, -0.5px) rotate(1.5deg);
+  }
+  30% {
+    transform: translate(1.5px, 0.5px) rotate(0.5deg);
+  }
+  32% {
+    transform: translate(1.5px, 1.5px) rotate(1.5deg);
+  }
+  34% {
+    transform: translate(2.5px, 0.5px) rotate(0.5deg);
+  }
+  36% {
+    transform: translate(0.5px, -0.5px) rotate(-0.5deg);
+  }
+  38% {
+    transform: translate(-0.5px, -1.5px) rotate(0.5deg);
+  }
+  40% {
+    transform: translate(0.5px, -0.5px) rotate(0.5deg);
+  }
+  42% {
+    transform: translate(-1.5px, -0.5px) rotate(-0.5deg);
+  }
+  44% {
+    transform: translate(-1.5px, -0.5px) rotate(-0.5deg);
+  }
+  46% {
+    transform: translate(-0.5px, 0.5px) rotate(0.5deg);
+  }
+  48% {
+    transform: translate(-0.5px, -0.5px) rotate(0.5deg);
+  }
+  50% {
+    transform: translate(2.5px, 2.5px) rotate(-0.5deg);
+  }
+  52% {
+    transform: translate(-0.5px, 2.5px) rotate(0.5deg);
+  }
+  54% {
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+  56% {
+    transform: translate(-1.5px, -0.5px) rotate(1.5deg);
+  }
+  58% {
+    transform: translate(2.5px, 1.5px) rotate(1.5deg);
+  }
+  60% {
+    transform: translate(2.5px, 1.5px) rotate(-0.5deg);
+  }
+  62% {
+    transform: translate(-1.5px, 0.5px) rotate(1.5deg);
+  }
+  64% {
+    transform: translate(1.5px, -1.5px) rotate(0.5deg);
+  }
+  66% {
+    transform: translate(-0.5px, 1.5px) rotate(1.5deg);
+  }
+  68% {
+    transform: translate(-0.5px, 2.5px) rotate(-0.5deg);
+  }
+  70% {
+    transform: translate(1.5px, 2.5px) rotate(-0.5deg);
+  }
+  72% {
+    transform: translate(-1.5px, -1.5px) rotate(-0.5deg);
+  }
+  74% {
+    transform: translate(1.5px, -1.5px) rotate(1.5deg);
+  }
+  76% {
+    transform: translate(0.5px, -1.5px) rotate(0.5deg);
+  }
+  78% {
+    transform: translate(-1.5px, -1.5px) rotate(0.5deg);
+  }
+  80% {
+    transform: translate(0.5px, -1.5px) rotate(-0.5deg);
+  }
+  82% {
+    transform: translate(1.5px, 0.5px) rotate(0.5deg);
+  }
+  84% {
+    transform: translate(2.5px, -0.5px) rotate(-0.5deg);
+  }
+  86% {
+    transform: translate(-1.5px, 1.5px) rotate(1.5deg);
+  }
+  88% {
+    transform: translate(1.5px, 1.5px) rotate(1.5deg);
+  }
+  90% {
+    transform: translate(2.5px, 2.5px) rotate(-0.5deg);
+  }
+  92% {
+    transform: translate(1.5px, 2.5px) rotate(0.5deg);
+  }
+  94% {
+    transform: translate(0.5px, 2.5px) rotate(1.5deg);
+  }
+  96% {
+    transform: translate(-0.5px, 1.5px) rotate(0.5deg);
+  }
+  98% {
+    transform: translate(-1.5px, 0.5px) rotate(1.5deg);
+  }
+  0%, 100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
