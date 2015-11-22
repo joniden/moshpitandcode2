@@ -24,6 +24,8 @@ html,body{
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 html{
@@ -135,6 +137,7 @@ header{
 .top-content-body{
 	display: inline-block;
 	color: white;
+	width: 100%;
 	max-width: 530px;
 	margin-left: 40px;
 	text-align: left;

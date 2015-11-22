@@ -80,9 +80,11 @@ html, body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 p {
   font-family: "Didact Gothic", sans-serif;
   line-height: 1.3;
@@ -90,28 +92,28 @@ p {
   font-size: 20px;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 h1, h2, h3, h4 {
   font-family: "Francois One", Helvetica, Arial, sans-serif;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 h1 {
   font-size: 48px;
   margin-bottom: 20px;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 h2 {
   font-size: 40px;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 h3 {
   font-size: 32px;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 header {
   margin: 0 auto;
   width: 100%;
@@ -123,7 +125,7 @@ header {
   background-position: center;
   background-attachment: fixed;
 }
-/* line 70, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 header .bkr {
   position: fixed;
   top: 0;
@@ -135,25 +137,25 @@ header .bkr {
   z-index: -1;
 }
 @media (max-width: 500px) {
-  /* line 70, ../sass/screen.scss */
+  /* line 72, ../sass/screen.scss */
   header .bkr {
     width: 100vw;
     height: auto;
   }
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .logo {
   width: 80%;
   max-width: 500px;
   margin: auto;
 }
-/* line 93, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .logo:hover {
   animation: shake 1s ease infinite;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .profile-pic {
   width: 30%;
   min-width: 250px;
@@ -169,23 +171,23 @@ header .bkr {
   transition-delay: 0.1s, 0.12s, 0.15s,0.2s;
 }
 @media (max-width: 912px) {
-  /* line 98, ../sass/screen.scss */
+  /* line 100, ../sass/screen.scss */
   .profile-pic {
     float: none;
     margin-bottom: 50px;
     display: block;
   }
 }
-/* line 118, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .profile-pic:hover {
   border: 10px solid green;
 }
-/* line 122, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .profile-pic img {
   width: 100%;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .top-content {
   margin: auto;
   max-width: 1200px;
@@ -194,41 +196,42 @@ header .bkr {
   text-align: center;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .top-content-body {
   display: inline-block;
   color: white;
+  width: 100%;
   max-width: 530px;
   margin-left: 40px;
   text-align: left;
 }
 @media (max-width: 912px) {
-  /* line 135, ../sass/screen.scss */
+  /* line 137, ../sass/screen.scss */
   .top-content-body {
     margin: 0 auto;
     display: block;
   }
-  /* line 145, ../sass/screen.scss */
+  /* line 148, ../sass/screen.scss */
   .top-content-body h1 {
     text-align: center;
     font-size: 40px;
   }
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .content {
   background: black;
   min-height: 100vh;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .columns {
   -webkit-columns: 320px 3;
   -moz-columns: 320px 3;
   columns: 320px 3;
 }
 @media (max-width: 1000px) {
-  /* line 157, ../sass/screen.scss */
+  /* line 160, ../sass/screen.scss */
   .columns {
     -webkit-columns: 320px 2;
     -moz-columns: 320px 2;
@@ -236,14 +239,14 @@ header .bkr {
   }
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .inner-content {
   max-width: 1200px;
   margin: 0 auto;
   overflow: auto;
   color: white;
 }
-/* line 175, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .inner-content blockquote {
   font-size: 30px;
   background: #111;
@@ -254,7 +257,7 @@ header .bkr {
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
 }
-/* line 185, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .inner-content blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -263,14 +266,14 @@ header .bkr {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-/* line 195, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .inner-content h2 {
   width: 100%;
   text-align: center;
   margin-bottom: 40px;
   margin-top: 40px;
 }
-/* line 202, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .inner-content .column {
   display: inline-block;
   margin: 30px 5%;
@@ -281,34 +284,34 @@ header .bkr {
   break-inside: avoid;
   /* IE 10+ */
 }
-/* line 209, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .inner-content .column h3 {
   margin-bottom: 20px;
 }
-/* line 213, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .inner-content .column b {
   color: #7FFF00;
 }
 
-/* line 219, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .contact {
   text-align: center;
   padding-bottom: 100px;
   background: white;
 }
-/* line 224, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .contact h2 {
   padding-top: 40px;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 231, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .contact ul {
   width: 100%;
   text-align: center;
 }
-/* line 236, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .contact li {
   display: inline-block;
   width: 70px;
@@ -316,7 +319,7 @@ header .bkr {
   margin: 10px;
   border-radius: 50%;
 }
-/* line 244, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .contact li a {
   width: 60%;
   height: 60%;
@@ -329,7 +332,7 @@ header .bkr {
   transition: all 0.1s ease-in;
   text-transform: uppercase;
 }
-/* line 256, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .contact li a:after {
   background: green;
   bottom: 88px;
@@ -354,7 +357,7 @@ header .bkr {
   -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
-/* line 279, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .contact li a:before {
   border: solid;
   border-color: green transparent;
@@ -367,12 +370,12 @@ header .bkr {
   opacity: 0;
   transition: all 0.4s ease-in;
 }
-/* line 293, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .contact li a:hover {
   background: #fff;
   border: 6px solid green;
 }
-/* line 297, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 .contact li a:hover:before, .contact li a:hover:after {
   opacity: 1;
   -webkit-transform: rotateX(0deg);
@@ -380,7 +383,7 @@ header .bkr {
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
-/* line 303, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .contact li a img {
   width: 100%;
 }
