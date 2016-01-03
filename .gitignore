@@ -1,4 +1,5 @@
 /.sass-cache/
 /sass/
 src/
+*.php
 /index1.html

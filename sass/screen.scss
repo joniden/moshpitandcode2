@@ -70,6 +70,7 @@ header{
 	margin: 0 auto;
 	width: 100%;
 	min-height: 100vh;
+	margin-top: 100px;
 }
 
 .logo{
@@ -306,6 +307,7 @@ header{
 	text-decoration: none;
 	text-align: center;
 	font-family: $mainfont;
+	position: fixed;
 
 	&:hover{
 		color: $color;
@@ -350,6 +352,9 @@ header{
 		width: 200px;
 		height: 100px;
 		margin: 50px;
+		@media(max-width: 360px){
+			margin: 20px;
+		}
 
 		img{
 			width: 100%;
@@ -358,7 +363,8 @@ header{
 }
 
 #internship{
-
+	position: relative;
+	z-index: 100;
 }
 
 
