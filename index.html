@@ -28,10 +28,14 @@
 			
 		</header>
 
-		<div class="content">
+		<div class="content card">
 
-			<div class="inner-content">
-				<h2>{{content.reviews.title}}</h2>
+			<div class="inner-content" v-if="skills" transition>
+				<h2>
+					{{content.reviews.title}}
+					
+				</h2>
+				<a v-on:click="toggleskills" class="btn">What's this?</a>
 				<div class="columns">
 					<div class="column" v-for="r in content.reviews.list">
 						<h3>{{ r.title }}</h3>
@@ -39,6 +43,18 @@
 
 					</div>
 				</div>
+			</div>
+			<div class="inner-content" v-else>
+				<h2>
+					{{content.skills.title}}
+				</h2>
+
+				<ul class="list">
+					<li v-for="c in content.skills.list">
+						<b>{{c.skill}}</b>
+					</li>
+				</ul>
+				<a v-on:click="toggleskills" class="btn">Okay, got it!</a>
 			</div>
 		</div>
 

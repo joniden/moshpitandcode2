@@ -8,6 +8,9 @@
 @import url(https://fonts.googleapis.com/css?family=Didact+Gothic);
 @import "_vars";
 @import "_shake";
+@import "_cube";
+
+//@import "compass/css3/transform";
 
 @mixin flip($degs) {
 	-webkit-transform: rotateX($degs);
@@ -16,6 +19,16 @@
 	transform: rotateX($degs);
 
 }
+
+@mixin rotate($degs) {
+	-webkit-transform: rotate($degs);
+	-moz-transform: rotate($degs);
+	-o-transform: rotate($degs);
+	transform: rotate($degs);
+
+}
+
+@import "_arrow";
 
 *{
 	box-sizing: box-model;
@@ -365,6 +378,41 @@ header{
 #internship{
 	position: relative;
 	z-index: 100;
+}
+
+.hidden{
+	display: none;
+}
+
+.list{
+	font-family: $secondfont;
+	font-size: 120%;
+	text-align: center;
+	padding-bottom: 20px;
+	width: 150px;
+	margin: auto;
+
+	li{
+		text-transform: capitalize;
+		color: $color2;
+		text-align: left;
+
+	}
+}
+
+.btn{
+	font-family: $mainfont;
+	margin: auto;
+	padding: 10px;
+	background: $color;
+	border-radius: 10px;
+	display: block;
+	text-align: center;
+	width: 100px;
+
+	&:active,&:hover{
+		background: darkgreen;
+	}
 }
 
 

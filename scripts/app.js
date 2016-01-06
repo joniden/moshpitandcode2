@@ -29,12 +29,12 @@ var url = origin+path+'content/content.json';
 new Vue({
 	el: '#app',
 	data: {
-		content : null
+		content : null,
+		skills: true
 	},
 	created: function () {
 		this.fetchData();
 	},
-
 	filters: {
 		p: function (v) {
 			if(typeof v != 'undefined'){
@@ -54,6 +54,9 @@ new Vue({
 				self.content = JSON.parse(xhr.responseText);
 			};
 			xhr.send();
+		},
+		toggleskills: function(){
+			this.skills = ! this.skills;
 		}
 	}
 });

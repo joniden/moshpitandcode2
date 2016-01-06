@@ -222,12 +222,59 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: translate(0, 0) rotate(0);
   }
 }
-/* line 20, ../sass/screen.scss */
+/* line 1, ../sass/_arrow.scss */
+.arrow_default, .arrow, .arrow:before, .arrow:after {
+  background: white;
+  width: 40px;
+  position: relative;
+  height: 10px;
+  display: block;
+  content: "";
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* line 15, ../sass/_arrow.scss */
+.arrow.right {
+  float: right;
+}
+/* line 19, ../sass/_arrow.scss */
+.arrow.left {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  float: left;
+}
+/* line 24, ../sass/_arrow.scss */
+.arrow:before, .arrow:after {
+  width: 50%;
+  left: 62%;
+  height: 75%;
+}
+/* line 32, ../sass/_arrow.scss */
+.arrow:before {
+  top: -36%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 37, ../sass/_arrow.scss */
+.arrow:after {
+  top: -15%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 33, ../sass/screen.scss */
 * {
   box-sizing: box-model;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 html, body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
@@ -236,7 +283,7 @@ html, body {
   overflow-x: hidden;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 body {
   -webkit-overflow-scrolling: touch;
   background-color: black;
@@ -246,7 +293,7 @@ body {
   background-position: center;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 p {
   font-family: "Didact Gothic", sans-serif;
   line-height: 1.3;
@@ -254,33 +301,33 @@ p {
   font-size: 20px;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 b {
   font-weight: bold;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 h1, h2, h3, h4 {
   font-family: "Francois One", Helvetica, Arial, sans-serif;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 h1 {
   font-size: 48px;
   margin-bottom: 20px;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 h2 {
   font-size: 40px;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 h3 {
   font-size: 32px;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 header {
   margin: 0 auto;
   width: 100%;
@@ -288,18 +335,18 @@ header {
   margin-top: 100px;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .logo {
   width: 80%;
   max-width: 500px;
   margin: auto;
 }
-/* line 81, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .logo:hover {
   animation: shake 1s ease infinite;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .profile-pic {
   width: 30%;
   min-width: 250px;
@@ -315,23 +362,23 @@ header {
   transition-delay: 0.1s, 0.12s, 0.15s,0.2s;
 }
 @media (max-width: 912px) {
-  /* line 86, ../sass/screen.scss */
+  /* line 99, ../sass/screen.scss */
   .profile-pic {
     float: none;
     margin-bottom: 50px;
     display: block;
   }
 }
-/* line 106, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .profile-pic:hover {
   border: 10px solid green;
 }
-/* line 110, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .profile-pic img {
   width: 100%;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .top-content {
   margin: auto;
   max-width: 1200px;
@@ -339,7 +386,7 @@ header {
   text-align: center;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .top-content-body {
   display: inline-block;
   color: white;
@@ -349,32 +396,32 @@ header {
   text-align: left;
 }
 @media (max-width: 912px) {
-  /* line 122, ../sass/screen.scss */
+  /* line 135, ../sass/screen.scss */
   .top-content-body {
     margin: 0 auto;
     display: block;
   }
-  /* line 133, ../sass/screen.scss */
+  /* line 146, ../sass/screen.scss */
   .top-content-body h1 {
     text-align: center;
     font-size: 40px;
   }
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .content {
   background: black;
   min-height: 100vh;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .columns {
   -webkit-columns: 320px 3;
   -moz-columns: 320px 3;
   columns: 320px 3;
 }
 @media (max-width: 1000px) {
-  /* line 145, ../sass/screen.scss */
+  /* line 158, ../sass/screen.scss */
   .columns {
     -webkit-columns: 320px 2;
     -moz-columns: 320px 2;
@@ -382,14 +429,14 @@ header {
   }
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .inner-content {
   max-width: 1200px;
   margin: 0 auto;
   color: white;
   padding-top: 10px;
 }
-/* line 163, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .inner-content blockquote {
   font-size: 30px;
   background: #111;
@@ -400,7 +447,7 @@ header {
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
 }
-/* line 173, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .inner-content blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -409,14 +456,14 @@ header {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-/* line 183, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .inner-content h2 {
   width: 100%;
   text-align: center;
   margin-bottom: 40px;
   margin-top: 40px;
 }
-/* line 190, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .inner-content .column {
   display: inline-block;
   margin: 30px 5%;
@@ -427,34 +474,34 @@ header {
   break-inside: avoid;
   /* IE 10+ */
 }
-/* line 197, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .inner-content .column h3 {
   margin-bottom: 20px;
 }
-/* line 201, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .inner-content .column b {
   color: #7FFF00;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .contact {
   text-align: center;
   padding-bottom: 100px;
   background: white;
 }
-/* line 212, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .contact h2 {
   padding-top: 40px;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 219, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .contact ul {
   width: 100%;
   text-align: center;
 }
-/* line 224, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .contact li {
   display: inline-block;
   width: 70px;
@@ -462,7 +509,7 @@ header {
   margin: 10px;
   border-radius: 50%;
 }
-/* line 232, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .contact li a {
   width: 60%;
   height: 60%;
@@ -475,7 +522,7 @@ header {
   transition: all 0.1s ease-in;
   text-transform: uppercase;
 }
-/* line 244, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .contact li a:after {
   background: green;
   bottom: 88px;
@@ -500,7 +547,7 @@ header {
   -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
-/* line 267, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .contact li a:before {
   border: solid;
   border-color: green transparent;
@@ -513,12 +560,12 @@ header {
   opacity: 0;
   transition: all 0.4s ease-in;
 }
-/* line 281, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .contact li a:hover {
   background: #fff;
   border: 6px solid green;
 }
-/* line 285, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .contact li a:hover:before, .contact li a:hover:after {
   opacity: 1;
   -webkit-transform: rotateX(0deg);
@@ -526,12 +573,12 @@ header {
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
-/* line 291, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .contact li a img {
   width: 100%;
 }
 
-/* line 300, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .fullsize-link {
   width: 100%;
   display: block;
@@ -544,46 +591,46 @@ header {
   font-family: "Francois One", Helvetica, Arial, sans-serif;
   position: fixed;
 }
-/* line 312, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 .fullsize-link:hover {
   color: green;
 }
 
-/* line 317, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 .section {
   background: white;
   color: black;
   padding-bottom: 40px;
 }
-/* line 322, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .section.invert {
   background: black;
   color: white;
 }
-/* line 326, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .section.invert h2 {
   color: white;
 }
-/* line 330, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .section.invert .inner-content {
   color: white;
 }
-/* line 335, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .section h2 {
   color: black;
 }
-/* line 339, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .section .inner-content {
   color: black;
   width: 80%;
   max-width: 960px;
 }
-/* line 345, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .section ul {
   width: 100%;
   text-align: center;
 }
-/* line 350, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 .section li {
   display: inline-block;
   width: 200px;
@@ -591,18 +638,55 @@ header {
   margin: 50px;
 }
 @media (max-width: 360px) {
-  /* line 350, ../sass/screen.scss */
+  /* line 363, ../sass/screen.scss */
   .section li {
     margin: 20px;
   }
 }
-/* line 359, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .section li img {
   width: 100%;
 }
 
-/* line 365, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 #internship {
   position: relative;
   z-index: 100;
+}
+
+/* line 383, ../sass/screen.scss */
+.hidden {
+  display: none;
+}
+
+/* line 387, ../sass/screen.scss */
+.list {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 120%;
+  text-align: center;
+  padding-bottom: 20px;
+  width: 150px;
+  margin: auto;
+}
+/* line 395, ../sass/screen.scss */
+.list li {
+  text-transform: capitalize;
+  color: #7FFF00;
+  text-align: left;
+}
+
+/* line 403, ../sass/screen.scss */
+.btn {
+  font-family: "Francois One", Helvetica, Arial, sans-serif;
+  margin: auto;
+  padding: 10px;
+  background: green;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  width: 100px;
+}
+/* line 413, ../sass/screen.scss */
+.btn:active, .btn:hover {
+  background: darkgreen;
 }
