@@ -1,0 +1,43 @@
+.arrow_default{
+	background: white;
+	width: 40px;
+	position: relative;
+	height: 10px;
+	display: block;
+	content: "";
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.arrow{
+	@extend .arrow_default;
+
+	&.right{
+		float: right;
+	}
+	
+	&.left{
+		@include rotate(180deg);
+		float: left;
+	}
+
+	&:before,&:after{
+		@extend .arrow_default;
+		width: 50%;
+		left: 62%;
+		height: 75%; 
+
+	}
+
+	&:before{
+		top: -36%;
+		@include rotate(45deg);
+	}
+
+	&:after{
+		top: -15%;
+		@include rotate(-45deg);
+	}
+
+	
+}
