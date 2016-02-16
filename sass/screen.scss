@@ -153,6 +153,7 @@ header{
 .content{
 	background: black;
 	min-height: 100vh;
+	padding: 20px;
 }
 
 .columns{
@@ -409,6 +410,7 @@ header{
 	display: block;
 	text-align: center;
 	width: 100px;
+	cursor: pointer;
 
 	&:active,&:hover{
 		background: darkgreen;

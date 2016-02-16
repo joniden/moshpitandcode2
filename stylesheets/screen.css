@@ -412,16 +412,17 @@ header {
 .content {
   background: black;
   min-height: 100vh;
+  padding: 20px;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .columns {
   -webkit-columns: 320px 3;
   -moz-columns: 320px 3;
   columns: 320px 3;
 }
 @media (max-width: 1000px) {
-  /* line 158, ../sass/screen.scss */
+  /* line 159, ../sass/screen.scss */
   .columns {
     -webkit-columns: 320px 2;
     -moz-columns: 320px 2;
@@ -429,14 +430,14 @@ header {
   }
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .inner-content {
   max-width: 1200px;
   margin: 0 auto;
   color: white;
   padding-top: 10px;
 }
-/* line 176, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .inner-content blockquote {
   font-size: 30px;
   background: #111;
@@ -447,7 +448,7 @@ header {
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
 }
-/* line 186, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .inner-content blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -456,14 +457,14 @@ header {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-/* line 196, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .inner-content h2 {
   width: 100%;
   text-align: center;
   margin-bottom: 40px;
   margin-top: 40px;
 }
-/* line 203, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .inner-content .column {
   display: inline-block;
   margin: 30px 5%;
@@ -474,34 +475,34 @@ header {
   break-inside: avoid;
   /* IE 10+ */
 }
-/* line 210, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .inner-content .column h3 {
   margin-bottom: 20px;
 }
-/* line 214, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .inner-content .column b {
   color: #7FFF00;
 }
 
-/* line 220, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .contact {
   text-align: center;
   padding-bottom: 100px;
   background: white;
 }
-/* line 225, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .contact h2 {
   padding-top: 40px;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 232, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .contact ul {
   width: 100%;
   text-align: center;
 }
-/* line 237, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .contact li {
   display: inline-block;
   width: 70px;
@@ -509,7 +510,7 @@ header {
   margin: 10px;
   border-radius: 50%;
 }
-/* line 245, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .contact li a {
   width: 60%;
   height: 60%;
@@ -522,7 +523,7 @@ header {
   transition: all 0.1s ease-in;
   text-transform: uppercase;
 }
-/* line 257, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .contact li a:after {
   background: green;
   bottom: 88px;
@@ -547,7 +548,7 @@ header {
   -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
-/* line 280, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .contact li a:before {
   border: solid;
   border-color: green transparent;
@@ -560,12 +561,12 @@ header {
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
-/* line 294, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .contact li a:hover {
   background: #fff;
   border: 6px solid green;
 }
-/* line 298, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .contact li a:hover:before, .contact li a:hover:after {
   opacity: 1;
   -webkit-transform: rotateX(0deg);
@@ -573,12 +574,12 @@ header {
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
-/* line 304, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .contact li a img {
   width: 100%;
 }
 
-/* line 313, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .fullsize-link {
   width: 100%;
   display: block;
@@ -591,46 +592,46 @@ header {
   font-family: "Francois One", Helvetica, Arial, sans-serif;
   position: fixed;
 }
-/* line 325, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 .fullsize-link:hover {
   color: green;
 }
 
-/* line 330, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .section {
   background: white;
   color: black;
   padding-bottom: 40px;
 }
-/* line 335, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .section.invert {
   background: black;
   color: white;
 }
-/* line 339, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 .section.invert h2 {
   color: white;
 }
-/* line 343, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .section.invert .inner-content {
   color: white;
 }
-/* line 348, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 .section h2 {
   color: black;
 }
-/* line 352, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 .section .inner-content {
   color: black;
   width: 80%;
   max-width: 960px;
 }
-/* line 358, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 .section ul {
   width: 100%;
   text-align: center;
 }
-/* line 363, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 .section li {
   display: inline-block;
   width: 200px;
@@ -638,28 +639,28 @@ header {
   margin: 50px;
 }
 @media (max-width: 360px) {
-  /* line 363, ../sass/screen.scss */
+  /* line 364, ../sass/screen.scss */
   .section li {
     margin: 20px;
   }
 }
-/* line 372, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 .section li img {
   width: 100%;
 }
 
-/* line 378, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 #internship {
   position: relative;
   z-index: 100;
 }
 
-/* line 383, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 .hidden {
   display: none;
 }
 
-/* line 387, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .list {
   font-family: "Didact Gothic", sans-serif;
   font-size: 120%;
@@ -668,14 +669,14 @@ header {
   width: 150px;
   margin: auto;
 }
-/* line 395, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 .list li {
   text-transform: capitalize;
   color: #7FFF00;
   text-align: left;
 }
 
-/* line 403, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .btn {
   font-family: "Francois One", Helvetica, Arial, sans-serif;
   margin: auto;
@@ -685,8 +686,9 @@ header {
   display: block;
   text-align: center;
   width: 100px;
+  cursor: pointer;
 }
-/* line 413, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 .btn:active, .btn:hover {
   background: darkgreen;
 }
