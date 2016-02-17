@@ -340,13 +340,16 @@ header {
   width: 80%;
   max-width: 500px;
   margin: auto;
+  margin-bottom: 100px;
+  color: white;
+  text-align: center;
 }
-/* line 94, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .logo:hover {
   animation: shake 1s ease infinite;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .profile-pic {
   width: 30%;
   min-width: 250px;
@@ -362,23 +365,23 @@ header {
   transition-delay: 0.1s, 0.12s, 0.15s,0.2s;
 }
 @media (max-width: 912px) {
-  /* line 99, ../sass/screen.scss */
+  /* line 102, ../sass/screen.scss */
   .profile-pic {
     float: none;
     margin-bottom: 50px;
     display: block;
   }
 }
-/* line 119, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .profile-pic:hover {
   border: 10px solid green;
 }
-/* line 123, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .profile-pic img {
   width: 100%;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .top-content {
   margin: auto;
   max-width: 1200px;
@@ -386,7 +389,7 @@ header {
   text-align: center;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .top-content-body {
   display: inline-block;
   color: white;
@@ -396,33 +399,33 @@ header {
   text-align: left;
 }
 @media (max-width: 912px) {
-  /* line 135, ../sass/screen.scss */
+  /* line 138, ../sass/screen.scss */
   .top-content-body {
     margin: 0 auto;
     display: block;
   }
-  /* line 146, ../sass/screen.scss */
+  /* line 149, ../sass/screen.scss */
   .top-content-body h1 {
     text-align: center;
     font-size: 40px;
   }
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .content {
   background: black;
   min-height: 100vh;
   padding: 20px;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .columns {
   -webkit-columns: 320px 3;
   -moz-columns: 320px 3;
   columns: 320px 3;
 }
 @media (max-width: 1000px) {
-  /* line 159, ../sass/screen.scss */
+  /* line 162, ../sass/screen.scss */
   .columns {
     -webkit-columns: 320px 2;
     -moz-columns: 320px 2;
@@ -430,14 +433,14 @@ header {
   }
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .inner-content {
   max-width: 1200px;
   margin: 0 auto;
   color: white;
   padding-top: 10px;
 }
-/* line 177, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .inner-content blockquote {
   font-size: 30px;
   background: #111;
@@ -448,7 +451,7 @@ header {
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
 }
-/* line 187, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .inner-content blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -457,14 +460,14 @@ header {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-/* line 197, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .inner-content h2 {
   width: 100%;
   text-align: center;
   margin-bottom: 40px;
   margin-top: 40px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .inner-content .column {
   display: inline-block;
   margin: 30px 5%;
@@ -475,34 +478,43 @@ header {
   break-inside: avoid;
   /* IE 10+ */
 }
-/* line 211, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .inner-content .column h3 {
   margin-bottom: 20px;
 }
-/* line 215, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .inner-content .column b {
   color: #7FFF00;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .contact {
   text-align: center;
   padding-bottom: 100px;
   background: white;
 }
-/* line 226, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .contact h2 {
   padding-top: 40px;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 233, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
+.contact h3 {
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+/* line 240, ../sass/screen.scss */
+.contact h3 a {
+  color: green;
+}
+/* line 245, ../sass/screen.scss */
 .contact ul {
   width: 100%;
   text-align: center;
 }
-/* line 238, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .contact li {
   display: inline-block;
   width: 70px;
@@ -510,7 +522,7 @@ header {
   margin: 10px;
   border-radius: 50%;
 }
-/* line 246, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .contact li a {
   width: 60%;
   height: 60%;
@@ -523,7 +535,7 @@ header {
   transition: all 0.1s ease-in;
   text-transform: uppercase;
 }
-/* line 258, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .contact li a:after {
   background: green;
   bottom: 88px;
@@ -548,7 +560,7 @@ header {
   -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
-/* line 281, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .contact li a:before {
   border: solid;
   border-color: green transparent;
@@ -561,12 +573,12 @@ header {
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
-/* line 295, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 .contact li a:hover {
   background: #fff;
   border: 6px solid green;
 }
-/* line 299, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .contact li a:hover:before, .contact li a:hover:after {
   opacity: 1;
   -webkit-transform: rotateX(0deg);
@@ -574,12 +586,12 @@ header {
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
-/* line 305, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .contact li a img {
   width: 100%;
 }
 
-/* line 314, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 .fullsize-link {
   width: 100%;
   display: block;
@@ -592,46 +604,46 @@ header {
   font-family: "Francois One", Helvetica, Arial, sans-serif;
   position: fixed;
 }
-/* line 326, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .fullsize-link:hover {
   color: green;
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .section {
   background: white;
   color: black;
   padding-bottom: 40px;
 }
-/* line 336, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .section.invert {
   background: black;
   color: white;
 }
-/* line 340, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .section.invert h2 {
   color: white;
 }
-/* line 344, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .section.invert .inner-content {
   color: white;
 }
-/* line 349, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .section h2 {
   color: black;
 }
-/* line 353, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 .section .inner-content {
   color: black;
   width: 80%;
   max-width: 960px;
 }
-/* line 359, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .section ul {
   width: 100%;
   text-align: center;
 }
-/* line 364, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .section li {
   display: inline-block;
   width: 200px;
@@ -639,28 +651,28 @@ header {
   margin: 50px;
 }
 @media (max-width: 360px) {
-  /* line 364, ../sass/screen.scss */
+  /* line 376, ../sass/screen.scss */
   .section li {
     margin: 20px;
   }
 }
-/* line 373, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 .section li img {
   width: 100%;
 }
 
-/* line 379, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 #internship {
   position: relative;
   z-index: 100;
 }
 
-/* line 384, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 .hidden {
   display: none;
 }
 
-/* line 388, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .list {
   font-family: "Didact Gothic", sans-serif;
   font-size: 120%;
@@ -669,14 +681,14 @@ header {
   width: 150px;
   margin: auto;
 }
-/* line 396, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .list li {
   text-transform: capitalize;
   color: #7FFF00;
   text-align: left;
 }
 
-/* line 404, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .btn {
   font-family: "Francois One", Helvetica, Arial, sans-serif;
   margin: auto;
@@ -688,7 +700,7 @@ header {
   width: 100px;
   cursor: pointer;
 }
-/* line 415, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 .btn:active, .btn:hover {
   background: darkgreen;
 }

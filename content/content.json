@@ -160,6 +160,7 @@
   },
   "contact": {
     "title": "Contact Me!",
+    "email": "jocke@niden.se",
     "list": [
       {
         "name": "stackoverflow",
@@ -182,11 +183,6 @@
         "img": "images/socialmedia/spot.svg"
       },
       {
-        "name": "facebook",
-        "url": "https://www.facebook.com/jniden",
-        "img": "images/socialmedia/fb.svg"
-      },
-      {
         "name": "instagram",
         "url": "https://instagram.com/jockeniden",
         "img": "images/socialmedia/ig.svg"
@@ -195,11 +191,6 @@
         "name": "behance",
         "url": "https://www.behance.net/jockeniden",
         "img": "images/socialmedia/be.svg"
-      },
-      {
-        "name": "mail",
-        "url": "mailto:jocke@moshpitandcode.com",
-        "img": "images/socialmedia/mail.svg"
       }
     ]
   }

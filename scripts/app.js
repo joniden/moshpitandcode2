@@ -30,7 +30,8 @@ new Vue({
 	el: '#app',
 	data: {
 		content : null,
-		skills: true
+		skills: true,
+		contactemail:true
 	},
 	created: function () {
 		this.fetchData();
@@ -60,3 +61,4 @@ new Vue({
 		}
 	}
 });
+

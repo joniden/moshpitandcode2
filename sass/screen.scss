@@ -90,6 +90,9 @@ header{
 	width: 80%;
 	max-width: 500px;
 	margin: auto;
+	margin-bottom: 100px;
+	color: white;
+	text-align: center;
 
 	&:hover{
 		animation: shake 1s ease infinite;
@@ -228,6 +231,15 @@ header{
 		margin-bottom: 40px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	h3{
+		margin-bottom: 40px;
+		text-decoration: underline;
+
+		a{
+			color: $color;
+		}
 	}
 
 	ul{
